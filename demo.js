@@ -3,7 +3,9 @@ let fs = require('fs');
 // const Json2csvParser = require('json2csv').Parser;
 const fields = ['name', 'url'];
 const Json2csvParser = require('json2csv').Parser;
-
+cloudinary.config({
+    
+});
 
 begin();
 async function begin() {
