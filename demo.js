@@ -4,11 +4,6 @@ let fs = require('fs');
 const fields = ['name', 'url'];
 const Json2csvParser = require('json2csv').Parser;
 
-cloudinary.config({
-    cloud_name: 'keyur1103',
-    api_key: 423612485853384,
-    api_secret: 'e2ZzOCPaheH4BvC6nPazouw-FkU'
-});
 
 begin();
 async function begin() {
