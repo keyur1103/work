@@ -28,6 +28,7 @@ async function processImage() {
     // return new Promise((resolve, reject) => {
     await cloudinary.v2.api.resources({
         type: 'upload',
+        max_results:1000,
         prefix: 'sss/'
     }, async function (error, result) {
         // result;
@@ -67,6 +68,7 @@ async function generateCSV() {
     let new_arrary = [];
     await cloudinary.v2.api.resources({
         type: 'upload',
+        max_results: 1000,
         prefix: 'optimzeimage/'
     }, function (error, result) {
         // result;
