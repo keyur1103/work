@@ -4,25 +4,14 @@ let fs = require('fs');
 const fields = ['name', 'url'];
 const Json2csvParser = require('json2csv').Parser;
 
-
 cloudinary.config({
-    cloud_name: 'keyur1103',
-    api_key: 423612485853384,
-    api_secret: 'e2ZzOCPaheH4BvC6nPazouw-FkU'
+    
 });
 
-// i will manage the two function    
-// begin();
 processImage()
-async function begin() {
-    // await processImage()
-    // processImage();
-    // await generateCSV();
+async function begin() {   
     await cloudinaryDeleteimage()
-
 }
-
-
 async function processImage() {
     console.log('processimage')
     // return new Promise((resolve, reject) => {
@@ -54,15 +43,11 @@ async function processImage() {
 }
 
 function cloudinaryDeleteimage() {
-    // console.log("Delete image already ");
-    // cloudinary.api.delete_resources_by_prefix('sss/', function (result) {
-        // console.log("Results", result);
+   
         generateCSV();
     // });
 
 }
-
-
 async function generateCSV() {
     // console.log('generatecsv')
     let new_arrary = [];
